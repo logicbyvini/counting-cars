@@ -1,0 +1,26 @@
+# --- Ignorar arquivos de sistema do Mac ---
+.DS_Store
+
+# --- Ignorar arquivos compilados do Python ---
+__pycache__/
+*.py[cod]
+
+# --- Ignorar Ambientes Virtuais ---
+.env
+venv/
+env/
+
+# --- Ignorar Dados Pesados (Vídeos e Imagens) ---
+data/raw/*.mp4
+data/processed/*.mp4
+*.avi
+*.mov
+
+# --- Ignorar Modelos Pesados ---
+*.pt
+*.onnx
+models/*.pt
+
+# --- Ignorar configurações de IDE ---
+.vscode/
+.idea/

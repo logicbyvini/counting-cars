@@ -17,38 +17,39 @@ Cars are counted as they cross a virtual line in the video.
 
 ---
 
-## 📁 Project Structure
+## 📂 Estrutura do Projeto
+
+```plaintext
 counting-cars/
 │
-├── src/                 # Código principal do projeto
-│   ├── detector.py
-│   ├── tracker.py
-│   └── counter.py
+├── 📂 src/                      # Código principal do projeto
+│   ├── detector.py             # Lógica de detecção (YOLO)
+│   ├── tracker.py              # Lógica de rastreamento
+│   └── counter.py              # Lógica de contagem
 │
-├── models/              # Modelos YOLO, pesos treinados etc.
+├── 📂 models/                   # Modelos YOLO, pesos treinados (.pt)
 │
-├── data/
-│   ├── raw/             # Vídeos originais
-│   └── processed/       # Frames, labels, datasets
+├── 📂 data/                     # Dados do projeto
+│   ├── 📂 raw/                  # Vídeos originais
+│   └── 📂 processed/            # Frames processados, datasets
 │
-├── notebooks/           # Jupyter para exploração
+├── 📂 notebooks/                # Jupyter Notebooks para exploração/testes
 │
-├── utils/               # Funções auxiliares
-│   └── plotting.py
+├── 📂 utils/                    # Funções auxiliares e ferramentas
+│   └── plotting.py             # Funções de plotagem gráfica
 │
-├── docs/                # Documentação, diagramas, explicações
+├── 📂 docs/                     # Documentação, diagramas e explicações
 │
-├── deployments/         # Exportação para CoreML, ONNX, TensorRT
+├── 📂 deployments/              # Exportação (CoreML, ONNX, TensorRT)
 │
-├── experiments/         # Testes, treinamentos, métricas
+├── 📂 experiments/              # Logs de testes e treinamentos
 │
-├── tests/               # Testes unitários
+├── 📂 tests/                    # Testes unitários (QA)
 │
-├── results/             # Gráficos e vídeos de saída
+├── 📂 results/                  # Gráficos e vídeos de saída gerados
 │
-├── scripts/             # Scripts CLI (ex: processar vídeo)
+├── 📂 scripts/                  # Scripts CLI (ex: processar vídeo em lote)
 │
-├── requirements.txt     # Dependências
-├── .gitignore
-└── README.md
-
+├── 📄 requirements.txt          # Lista de dependências do Python
+├── 📄 .gitignore                # Arquivos ignorados pelo Git
+└── 📄 README.md                 # Documentação principal
